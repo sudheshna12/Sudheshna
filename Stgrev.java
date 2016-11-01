@@ -1,21 +1,23 @@
  import java.util.*;
-class Stgsplt
+class Strev
 {
-public static void main(String[] args)
+public static void main(String... args)
 {
-String st=" I am good girl";
-String a[]=st.split("//s");
-
-for(int i=0;i<a[].length;i++)
+System.out.println("Enter a string");
+Scanner S=new Scanner(System.in);
+String a=S.next();
+String rev="",m;
+m=a;
+for(int i=0;i<a.length();i++)
 {
-if(i%2==0)
-{
-System.out.println(a[i])
+rev+=a.charAt(i);
 }
-else
+if(m.equals(rev))
 {
-System.out.println(a[i])
-}
+System.out.println("given string is palindrome");
+}else
+{
+System.out.println("given string not  a palindrome");
 }
 }
 }
