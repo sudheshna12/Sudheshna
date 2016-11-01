@@ -11,7 +11,7 @@ Scanner s= new Scanner(System.in);
 System.out.print(" Enter values of n=");
 n=s.nextInt();
  m=n;
-for(i=0;i<=n;i++)
+while(n!=0)
 {
 p=n%10;
 sum=sum+p*p*p;
